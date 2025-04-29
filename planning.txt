@@ -1,1 +1,29 @@
-This document is for planning out a game of Tic Tac Toe.
+Tic Tac Toe planning
+
+1. Draw the lines
+  a. console.log the board
+  b. us an array with 9 elements to represent the board
+    i. can be one dimensional or two dimensional
+  c. our array will have nine null values to start (if 1 dimensional)
+2. Choose X's or O's
+  a. Player 1 will be X and Player 2 will be O
+3. X's go first
+  a. use a "turn" variable to store whose turn it is ("X" or "O")
+4. X chooses a spot
+  a. replace null value with "turn" variable
+5. Change the turn
+  a. update the "turn" variable to be the opposite of what it currently is
+6. O chooses a spot
+  a. make sure spot is available (if it has a null value)
+  b. replace null value with "turn" variable
+7. repeat until the game ends
+  a. while loop
+8. Check if someone gets three in a row, they are the winner
+  a. this should take place at the end of each turn
+  b. we will need index numbers of the positions we are checking
+  c. if statement used to introduce branching
+9. It's a tie if there are no more playable spots and no winner
+  a. this should take place at the end of each turn
+  b. no more null values and none of the checks from step 8 were true
+10. Repeat the whole process to play again
+  a. ???
