@@ -44,3 +44,9 @@ The general flow of the code we will write is:
 - Gameplay loop
   - In response to some kind of user interaction, our code will update all relevant pieces of state, and lastly
   will render the new updated state to the screen
+
+  Models: What state will we need?
+  - board variable that stores an array
+  - whose turn is it can be stored in turn variable as an 'X' or an 'O'
+  - is there a winner? This value can be stored in a winner variable as a string
+
