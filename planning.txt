@@ -10,8 +10,14 @@ Tic Tac Toe planning
 3. X's go first
   a. use a "turn" variable to store whose turn it is ("X" or "O")
 4. X chooses a spot
-  a. replace null value with "turn" variable
-  b. render the board
+  a. use prompt to receive user input
+    i. Have the user choose a number from 0-8. We will use this as an index number
+    ii. we will need to check if selection is valid
+        -- must be a number
+        -- between 0 & 8
+        -- not already chosen
+  b. If selection is valid, replace null value with "turn" variable
+  c. render the board
 5. Change the turn
   a. update the "turn" variable to be the opposite of what it currently is
 6. O chooses a spot
