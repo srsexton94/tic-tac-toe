@@ -1,0 +1,23 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/srsexton94/tic-tac-toe#readme",
+  "bugs": {
+    "url": "https://github.com/srsexton94/tic-tac-toe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsexton94/tic-tac-toe.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "tic-tac-toe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
