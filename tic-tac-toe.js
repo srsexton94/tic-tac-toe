@@ -16,7 +16,10 @@ const WINNING_COMBOS = [
 
 // Model data
 // Our game start variables
-let board, turn, winner;
+let board,
+  turn,
+  winner,
+  replay = "y";
 
 // Controller functions
 
@@ -92,5 +95,9 @@ function renderMessage() {
 }
 
 // Start game
-init();
-gameplayLoop();
+while (replay === "y") {
+  init();
+  gameplayLoop();
+  replay = prompt("If you want to play again, enter a 'y' in the console: ");
+}
+console.log("Thanks for playing!");
