@@ -1,0 +1,62 @@
+:root {
+  --gapSize: 0.5rem;
+  --buttonSize: 7rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: rgb(255, 249, 240);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--buttonSize));
+  grid-template-rows: repeat(3, var(--buttonSize));
+  gap: var(--gapSize);
+  height: calc(var(--buttonSize) * 3 + var(--gapSize) * 2);
+  width: calc(var(--buttonSize) * 3 + var(--gapSize) * 2);
+  margin: 2rem 0;
+}
+
+.cell {
+  cursor: pointer;
+  height: var(--buttonSize);
+  width: var(--buttonSize);
+  border: 0;
+  font-size: 4rem;
+  background-color: #d9d9d9;
+
+}
+.cell:hover,
+.cell:focus {
+  background-color: #b3b2b2;
+}
+
+.cell:first-child {
+  border-top-left-radius: 1.5rem;
+}
+.cell:nth-child(3) {
+  border-top-right-radius: 1.5rem;
+}
+.cell:nth-child(7) {
+  border-bottom-left-radius: 1.5rem;
+}
+.cell:last-child {
+  border-bottom-right-radius: 1.5rem;
+}

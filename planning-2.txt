@@ -1,0 +1,57 @@
+Tic Tac Toe planning 2
+
+1. Draw the lines
+  a. Build out a UI with HTML and CSS that represents our board
+  b. Cache DOM elements for later use (selecting elements)
+  c. us an array with 9 elements to represent the board
+    i. can be one dimensional or two dimensional
+    ii. our array will have nine null values to start (if 1 dimensional)
+  d. render changes
+2. Choose X's or O's
+  a. Player 1 will be X and Player 2 will be O
+3. X's go first
+  a. use a "turn" variable to store whose turn it is ("X" or "O")
+4. X chooses a spot
+  a. listen for user click on board
+    i. we will need to check if selection is valid
+      -- not already chosen
+  b. If selection is valid, replace null value with "turn" variable in our state
+5. Change the turn
+  a. update the "turn" variable to be the opposite of what it currently is
+  b. render changes
+6. O chooses a spot
+  a. make sure spot is available (if it has a null value)
+  b. replace null value with "turn" variable
+  c. render changes
+7. repeat until the game ends
+  a. while loop
+8. Check if someone gets three in a row, they are the winner
+  a. this should take place at the end of each turn
+  b. we will need index numbers of the positions we are checking
+  c. if statement used to introduce branching
+  d. render changes
+9. It's a tie if there are no more playable spots and no winner
+  a. this should take place at the end of each turn
+  b. no more null values and none of the checks from step 8 were true
+  c. render changes
+10. Repeat the whole process to play again
+  a. click play again button
+
+Design Pattern: MVC - Model View Controller
+
+The Model is our data that is meant to represent the state of our game or application
+The View is the portion of our code that displays something to the user
+The Controller represents the logic that will update the Model. The Controller also uses the data from the Model and
+passes it to the View.
+
+The general flow of the code we will write is:
+- Initialization (setting up the game)
+- Gameplay loop
+  - *** In response to some kind of user interaction, our code will update all relevant pieces of state, and lastly
+  will render the new updated state to the screen ***
+
+  Models: What state will we need?
+  - board variable that stores an array
+  - whose turn is it can be stored in turn variable as an 'X' or an 'O'
+  - is there a winner? This value can be stored in a winner variable as a string
+
