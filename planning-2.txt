@@ -14,6 +14,7 @@ Tic Tac Toe planning 2
 4. X chooses a spot
   a. listen for user click on board
     i. we will need to check if selection is valid
+      -- is an actual space
       -- not already chosen
   b. If selection is valid, replace null value with "turn" variable in our state
 5. Change the turn
